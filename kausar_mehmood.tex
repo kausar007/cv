@@ -1,34 +1,103 @@
-\documentclass[10pt]{article}
-\title{Kausar Mehmood}
-\author{kausar\_doaba@yahoo.com}
-\date{} % Removes date.
-\usepackage{titlesec} % Custom \section
+\documentclass[a4paper]{article}
 
-%Underlining ruler for subsections
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-%\titlespacing{\section}{0pt}{3pt}{3pt}
-
-\begin{document}
-
-%\pagestyle{empty}
-
-\maketitle
-
-\section*{Profile}
-An enthusiastic and hardworking person who just completed a software engineering degree at Queen Mary, University of London.
-Quick to grasp new ideas and concepts, and to develop innovative and creative solutions to problems.
-Able to work well on own initiative and can demonstrate the high levels of motivation required to meet the tightest of deadlines.
-Even under significant pressure, possesses a strong ability to perform effectively.
-Now looking to build on extensive range of technical skills within a suitably challenging role.
-
-\section*{Experience}
-\subsection*{Software Engineer}
-While working at accenture.
-
-\section*{Education}
-
-\section*{Skills}
-
-\section*{References}
-
-\end{document}
+    \usepackage{fontspec}
+    \setmainfont{Arial}
+    
+        \title{Kausar Mehmood}
+        \author{kausar\_doaba@yahoo.com}
+        \date{}
+        \usepackage{titlesec}
+        \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+        \renewcommand{\labelitemii}{$\bullet$}
+        \pagenumbering{gobble}
+        \addtolength{\oddsidemargin}{-.5in}
+        \addtolength{\evensidemargin}{-.5in}
+        \addtolength{\textwidth}{1in}
+    
+        \addtolength{\topmargin}{-.875in}
+        \addtolength{\textheight}{1.5in}
+    
+          
+        \begin{document}
+            
+            \maketitle
+            
+            \section*{Profile}
+                An enthusiastic and hardworking person who just completed a software engineering degree at Queen Mary, University of London. Quick to grasp new ideas and concepts, and to develop innovative and creative solutions to problems. Able to work well on own initiative and can demonstrate the high levels of motivation required to meet the tightest of deadlines. Even under significant pressure, possesses a strong ability to perform effectively. Now looking to build on extensive range of technical skills within a suitably challenging role.
+            
+            %\section*{Experience}
+            %\subsection*{Software Engineer}
+            %While working at accenture.
+            
+            
+            \section*{Education}
+                \begin{tabular}[t]{@{}l} 
+                    \textbf{MSc Software Engineering}
+                \end{tabular}
+                \hfill
+                \begin{tabular}[t]{l@{}}
+                    \textbf{Sept 2012 --- Sept 2013}
+                \end{tabular}\\
+                Queen Mary University of London
+        
+                \begin{description}
+                    \item \textbf{Core Modules:}\\
+                        Functional Programming, Advanced Program Design, XML and Structured Documents, Advanced Database Systems and Technology, Mobile Services, Real-time and Critical Systems, Software Analysis and Verification, and Interactive System Design.
+                    \item \textbf{Master's Project:}\\
+                        \textbf{Person Identification using Smartphone Accelerometer:}
+                        \begin{itemize}
+                            \item  The aim of this research project was to identify people based on data collected from their phone accelerometer while they were walking, jogging, or running.
+                            \item  Project was divided into two main tasks. First task was to develop an Android application which can read and record values of accelerometer and store it in phone memory. Developed using Android SDK and Eclipse as IDE.
+                            \item  Second task was to extract features from the time-series data. Features extracted include average resultant acceleration, histogram bins, standard deviation, arithmetic mean and covariance matrix.
+                            \item  Machine learning techniques were then applied to analyze data and create models for different activities and models to identify the person. Using these models individual person was identified in group of people by another set of data of the same person.
+                            \item  Compared accuracies of results of different activities, algorithms, distance measuring techniques and length of recordings and concluded how they affected overall accuracy.
+                            \item  Data pre-processing, feature extraction and machine learning algorithms were implemented in MATLAB.
+                        \end{itemize}
+                \end{description}
+            
+                % BS Hons
+                \noindent\begin{tabular}[t]{@{}l}
+                    \textbf{BS Hons(Computer Science)}
+                \end{tabular}
+                \hfill
+                \begin{tabular}[t]{l@{}}
+                   \textbf{Sept 2007 --- Sept 2011}
+                \end{tabular}\\
+                University of Engineering and Technology, Peshawar
+            
+                \begin{description}
+                    \item \textbf{Core Modules:}\\
+                    Functional Programming, Advanced Program Design, XML and Structured Documents, Advanced Database Systems and Technology, Mobile Services, Real-time and Critical Systems, Software Analysis and Verification, and Interactive System Design.
+                    \item \textbf{Bachelor's Project:}\\
+                    \textbf{E-SMS stands for Encrypted SMS:}
+                    \begin{itemize}
+                        \item A stand-alone messaging application for Nokia Symbian phones with capability of reading native inbox and outbox of the device. Login needed to start the application.
+                        \item Sends and receives encrypted (RSA based) SMS using a secret key. Only the sender and receiver who know the login details can see the messages.
+                        \item Developed using QT framework by Digia.
+                    \end{itemize}
+                    \textbf{Semester Projects:}
+                    \begin{itemize}
+                        \item Construction Company accounting system as 6th semester project.
+                        \begin{itemize}
+                            \item Software Requirements Specifications and Documentations.
+                            \item Database designs, ERDs, DFDs and CFDs.
+                            \item Implementation in Microsoft VB.Net and SQL Server.
+                            \item Data validation and further testing.
+                        \end{itemize}
+                        \item Basic notepad like text editor as 4th semester project.
+                        \begin{itemize}
+                            \item Basic file handling operations such as save, open, delete.
+                            \item Basic document related operations such as character and line count, print.
+                            \item Built-in calculator.
+                            \item Implementation in Microsoft C.
+                        \end{itemize}
+                    \end{itemize}
+        
+                \end{description}
+            
+            
+            \section*{Skills}
+            
+            \section*{References}
+            
+        \end{document}
