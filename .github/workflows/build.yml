@@ -5,6 +5,10 @@ on:
       - main
     tags:
       - '*'
+    paths-ignore:
+      - .gitignore
+      - README.md
+
 
 jobs:
   build:
