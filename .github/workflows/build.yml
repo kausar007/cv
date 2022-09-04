@@ -26,5 +26,5 @@ jobs:
           path: kausar_mehmood.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
-         with:
+        with:
           files: kausar_mehmood.pdf
