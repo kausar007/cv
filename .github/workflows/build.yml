@@ -26,6 +26,7 @@ jobs:
           path: kausar_mehmood.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           tag_name: latest
           files: kausar_mehmood.pdf
