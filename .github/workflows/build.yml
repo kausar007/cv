@@ -18,7 +18,13 @@ jobs:
         with:
           root_file: kausar_mehmood.tex
           latexmk_use_xelatex: true
+          extra_system_packages: font-noto
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv
+          path: kausar_mehmood.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
-        with:
+         with:
           files: kausar_mehmood.pdf
