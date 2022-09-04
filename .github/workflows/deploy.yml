@@ -1,0 +1,24 @@
+name: Build and release
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .gitignore
+      - README.md
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Compile
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: kausar_mehmood.tex
+          latexmk_use_xelatex: true
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: kausar_mehmood.pdf
